@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XML schema for Friends.xml -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://madeofmagicandwires.online/Friend"
+    xmlns="http://madeofmagicandwires.online"
+    xmlns:fr="http://madeofmagicandwires.online/Friend"
+    elementFormDefault="qualified">
+
+    <xs:complexType name="Friend">
+        <xs:attribute name="name" type="xs:string" use="required" />
+        <xs:attribute name="bio" type="xs:string" use="required" />
+        <xs:attribute name="drawable" type="xs:string" use="required" />
+        <xs:attribute default="3" name="rating" type="xs:float" />
+    </xs:complexType>
+
+    <xs:element name="Friends">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Friend" maxOccurs="unbounded"  type="fr:Friend" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="12dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/infoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/infoFriendAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/round_border"
+            android:padding="1dp"
+            android:maxHeight="200dp"
+            android:maxWidth="200dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/arya"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/friendImgDesc"
+            />
+
+        <TextView
+            android:id="@+id/infoFriendName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+
+
+            android:layout_gravity="center"
+            tools:text="Friend's Name" />
+        <TextView
+            android:id="@+id/infoFriendBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textSize="18sp"
+
+            tools:text="This is a short bio"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ratingContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_weight="1">
+        <RatingBar
+            android:id="@+id/infoFriendRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:isIndicator="false"
+            android:numStars="5"
+            android:stepSize="0.5" />
+    </LinearLayout>
+
+</LinearLayout>

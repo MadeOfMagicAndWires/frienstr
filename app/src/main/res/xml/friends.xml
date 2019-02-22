@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+- mock data of friends
+
+-->
+
+<fr:Friends xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="friend.xsd"
+    xmlns:fr="http://madeofmagicandwires.online/Friend">
+    <fr:Friend name="Arya Stark"
+        bio="I'm batman"
+        drawable="arya.png"/>
+    <fr:Friend name="Cersei"
+        bio="YAS KWEEN"
+        drawable="cersei"
+        rating="5"/>
+    <fr:Friend name="Daenerys"
+        drawable="daenerys"
+        bio="FIYA AND BLÜD"/>
+    <fr:Friend name="Jaime"
+        drawable="jaime"
+        bio="MGTOW"/>
+    <fr:Friend name="Jon"
+        drawable="jon"
+        bio="Not wincest"
+        rating="1"/>
+    <fr:Friend name="Jorah"
+        drawable="jorah"
+        bio="Ultimate cuck"/>
+    <fr:Friend name="Margaery"
+        drawable="margaery"
+        bio="Really George?"/>
+    <fr:Friend name="Melisandre"
+        drawable="melisandre"
+        bio="Has a Dutch accent"/>
+    <fr:Friend name="Sansa"
+        drawable="sansa"
+        bio="a.k.a. Maleficent"/>
+    <fr:Friend name="Tyrion"
+        drawable="tyrion"
+        bio="Basic"/>
+</fr:Friends>
