@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Friendstr</string>
+    <string name="info_activity_title">Info</string>
     <string name="friendImgDesc">Friend\'s profile picture</string>
 </resources>

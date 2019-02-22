@@ -47,6 +47,11 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
 
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setHomeButtonEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         retrieveFriend();
         bindActivity(mFriend);
     }
@@ -72,6 +77,12 @@ public class InfoActivity extends AppCompatActivity {
         TextView friendName = findViewById(R.id.infoFriendName);
         TextView friendBio  = findViewById(R.id.infoFriendBio);
         RatingBar friendRating = findViewById(R.id.infoFriendRating);
+
+        //update ActionBar
+        if(getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(data.getName());
+        }
+
 
         // Bind data from friend object to views
         friendImg.setImageResource(data.getDrawableId());
